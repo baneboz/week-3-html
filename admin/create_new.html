@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new wanted poster</title>
+  </head>
+  <body>
+    <a href="../index.html" title="Back to begining">Back to Homepage</a>
+    <br />
+    <br />
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Top headline</legend>
+        <label for="headline">Headline text:</label>
+        <input
+          type="text"
+          name="headline"
+          id="headline"
+          minlength="8"
+          maxlength="320"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Images</legend>
+        <label for="image1">Image 1:</label>
+        <input type="file" name="image1" id="image1" />
+        <br />
+        <label for="image2">Image 2:</label>
+        <input type="file" name="image2" id="image2" />
+        <br />
+        <label for="image1">Image 3:</label>
+        <input type="file" name="image3" id="image3" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Reward</legend>
+        <label for="reward">Reward money:</label>
+        <input type="text" name="reward" id="reward" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Description</legend>
+        <label for="aliases">Aliases:</label>
+        <br />
+        <input type="text" name="aliases" id="aliases" required />
+
+        <br />
+        <br />
+
+        <label for="birth">Birth:</label>
+        <br />
+        <input type="text" name="birth" id="birth" required />
+        <!-- ovde bi mogao date type -->
+        <!--  <input type="date" name="birth" id="birth" required/> -->
+        <br />
+        <br />
+
+        <label for="heir">Heir:</label>
+        <br />
+        <input type="text" name="heir" id="heir" required />
+
+        <br />
+        <br />
+
+        <label for="eyes">Eyes:</label>
+        <br />
+        <input type="text" name="eyes" id="eyes" required />
+
+        <br />
+        <br />
+
+        <label for="height">Height:</label>
+        <br />
+        <input type="number" name="height" id="height" required />
+
+        <br />
+        <br />
+
+        <label for="weight">Weight:</label>
+        <br />
+        <input type="number" name="weight" id="weight" required />
+
+        <br />
+        <br />
+
+        <label for="sex">Sex:</label>
+        <br />
+        <input type="text" name="sex" id="sex" required />
+
+        <br />
+        <br />
+
+        <label for="idNum">ID Number:</label>
+        <br />
+        <input
+          type="number"
+          name="idNum"
+          id="idNum"
+          minlength="10"
+          maxlength="10"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label for="occupation">Occupation:</label>
+        <br />
+        <input type="text" name="occupation" id="occupation" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Remarks</legend>
+        <textarea
+          name="remarks"
+          id="remarks"
+          placeholder="Remarks text"
+          cols="100"
+          rows="10"
+          minlength="32"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Caution</legend>
+        <textarea
+          name="caution"
+          id="caution"
+          placeholder="Caution text"
+          cols="100"
+          rows="10"
+          minlength="32"
+          required
+        ></textarea>
+      </fieldset>
+
+      <br />
+      <br />
+      <button type="reset">
+        <img src="../images/reload.png" width="13" alt="o" />
+        Reset
+      </button>
+      <button type="submit">
+        <img src="../images/plus.png" width="13" alt="+" />
+        Create Poster
+      </button>
+    </form>
+  </body>
+</html>
